@@ -1,0 +1,271 @@
+debug="true", ASPNETCORE_ENVIRONMENT=Development
+catch { }, catch(Exception without handling
+ValidateRequest="false", ValidateInput(false)
+enableViewStateMac="false"
+HttpOnly attribute missing
+Secure attribute missing
+@Html.AntiForgeryToken, AutoValidateAntiforgeryToken
+.innerHTML =, document.write
+http://, https://
+X-Content-Type-Options
+new Random(), Math.Random()
+Encrypt=false, missing SSL Mode=Require
+jQuery < 3.5.0, AngularJS 1.x
+"key=", "secret", "AES"
+.Value, .ToString() without null check
+Response.Redirect, RedirectToAction(userInput)
+"password=", pwd=
+// password, /* password */
+<password>, "Password":
+catch { }
+catch(Exception
+<input type="password" autocomplete="on">
+<security mode="None">
+<security mode="None">, protectionLevel="None"
+usernameOverTransport, None
+maxOccurs="unbounded"
+postMessage(
+anonymous bind, Bind("", "")
+AllowAnonymous, missing [Authorize]
+perMessageDeflate
+HttpContext.Session["obj"] =
+app.UseCookiePolicy
+app.UseHttpsRedirection
+app.UseMiddleware<Logging>
+enableEventValidation="false"
+timeout="1440"
+checkForIllegalCrossThreadCalls, Response.Headers.Remove
+missing [Authorize]
+.LogInformation("password", .WriteLine(user.SSN)
+open admin endpoints
+Expires=, Persistent=true
+cookieless="true"
+<form> without @Html.AntiForgeryToken()
+Serializable
+.Equals(null)
+Process.Start, cmd.exe, powershell
+Secure missing
+HttpOnly missing
+SameSite missing
+Domain=
+Expires= or Max-Age large
+context.WebSockets.AcceptWebSocketAsync
+Server.MapPath, File.Open(userInput)
+BinaryFormatter, Eval(, TypeNameHandling.All
+#ERROR!
+X-XSS-Protection
+X-Content-Type-Options
+Access-Control-Allow-Origin: *
+HttpPost, HttpGet only
+EnableSsl=false, Port=25
+DirectorySearcher.Filter with string concat
+DirectoryEntry with user input
+logger.Log(userInput)
+Response.Redirect(userInput)
+Path.Combine(userInput)
+HttpClient.GetAsync(userInput)
+Server=Microsoft-IIS, verbose errors
+missing .Dispose(), .Close()
+<serviceDebug includeExceptionDetailInFaults="true" />
+<security mode="None">
+Regex(".*(a+)+")
+RequestSizeLimit, missing checks
+"SELECT " + userInput, SqlCommand with concat
+Process.Start, ShellExecute
+missing [Authorize], custom auth bypass
+@Html.AntiForgeryToken
+Response.Write(userInput)
+Html.Raw, unsanitized DB output
+eval, exec, file download/upload without checks
+http://, SSLMode=None
+SelectSingleNode("..."+userInput)
+Request.Headers["Host"]
+Request.Files, IFormFile
+Path.GetTempFileName, /tmp/
+?password=, ?token=
+AllowAnonymous
+IP blocking, Rate limiting
+logger.Log("password")
+File.Open(userInput)
+Session.Abandon missing
+#ERROR!
+logger.Log(userInput)
+WebRequest.Create(userInput)
+missing uniqueness check on Email field
+parameter merging
+Strict-Transport-Security
+HttpOnly missing
+new Uri(userInput)
+Eval(
+X-Frame-Options
+Request.Headers["User-Agent"] into SQL
+debug="true"
+Request.Headers["Host"]
+username=, password= in logs/config
+missing throttling, rate-limiting middleware
+Exception:, at Namespace.Class
+Server: Microsoft-IIS, X-Powered-By: ASP.NET
+SHA1CryptoServiceProvider, SHA1Managed
+new Random(), OTP < 6 digits
+PasswordOptions.RequireDigit=false
+resetUrl = userInput
+localStorage.setItem("token")
+Process.Start(userInput)
+logger.Log(ex.ToString())
+log.Error(ex)
+<customErrors mode="On">, <customErrors mode="RemoteOnly">
+<forms cookieless="UseCookies">
+<forms enableCrossAppRedirects="false">
+<forms protection="All">
+<forms timeout=
+checkForRedirect="true", middleware presence
+X-AspNet-Version, X-Powered-By
+<pages viewStateEncryptionMode="Always">
+<machineKey validationKey=, decryptionKey=
+<sessionState mode="InProc">
+IIS directory browsing
+exp claim in token payload
+DirectoryEntry, LDAP://
+Package versions
+System.Net.NetworkCredential, ClientCredential
+key=, iv=, password=
+[Authorize] missing
+Access-Control-Allow-Origin: *
+JwtSecurityTokenHandler.ValidateToken
+PasswordOptions, RequiredLength, RequireDigit
+LockoutOptions, MaxFailedAccessAttempts
+ValidateAntiForgeryToken, @Html.AntiForgeryToken()
+ModelState.IsValid
+Manual validation, [FromBody]/[FromQuery] checks
+Redirect(model.URL) without validation
+Response.Redirect(Request["url"])
+FilePathResult, File(model.Path)
+File.Open(userInput), Path.Combine(userInput)
+ServerCertificateValidationCallback = (sender, cert, chain, errors) => true
+HttpClient, WebClient, HttpWebRequest with user input
+BinaryFormatter, SoapFormatter, ObjectInputStream
+JsonConvert.DeserializeObject(userInput)
+public\s+void\s+\w+_On.*
+public\s+virtual\s+\w+\s+\w+\(.*\)\s*{
+\[HandleProcessCorruptedStateExceptions\]
+new\s+BinaryFormatter\(\).*?\.Deserialize\s*\([^\)]*Binder\s*=\s*
+BinaryFormatter\(\).*?Binder\s*=\s*
+new\s+LosFormatter\(\).*?\.Deserialize\s*\(
+new\s+NetDataContractSerializer\(\).*?\.Deserialize\s*\(
+new\s+NetDataContractSerializer\(\).*?\.Deserialize\s*\([^\)]*Binder\s*=\s*
+NetDataContractSerializer\(\).*?Binder\s*=\s*
+new\s+ObjectStateFormatter\(\).*?\.Deserialize\s*\(
+new\s+JavaScriptSerializer\(\).*?SimpleTypeResolver
+new\s+JavaScriptSerializer\(\).*?SimpleTypeResolver
+TypeNameHandling\s*=\s*(?!None)
+new\s+JsonSerializerSettings\(\).*?TypeNameHandling
+new\s+JsonSerializerSettings\(\).*?TypeNameHandling\s*=\s*None
+new\s+JsonSerializer\(\).*?TypeNameHandling
+new\s+JsonSerializer\(\).*?TypeNameHandling\s*=\s*None
+DataTable\.ReadXml\(\s*\[^\)]*
+DataSet\.ReadXml\(\s*\[^\)]*
+Serializable\s+class\s+\w+\s*\{\s*DataSet\s*DataTable
+Serializable\s+class\s+\w+\s*\{\s*DataSet\s*DataTable
+new\s+BinaryFormatter\(\).*?\.Deserialize\s*\([^\)]*DataSet\s*DataTable
+new\s+BinaryFormatter\(\).*?\.Deserialize\s*\([^\)]*DataSet\s*DataTable
+WebMethod\s*\(\)\s*\[^\)]*DataSet\s*DataTable
+new\s+DataSet\(\).*?ReadXml\(\)
+Serializable\s+class\s+\w+\s*\{\s*DataSet\s*DataTable
+<.*?(\s+[^>]*=\s*["'][^"']*["'])*>.*?(\s+[^>]*>\s*)
+Path\.Combine\s*\(\s*\w+\s*,\s*\w+\s*\)
+catch\s+\w+\s+e\s*\{\s*Console\.WriteLine\s*\(".*"\)
+Response\.Redirect\s*\(\s*"[^"]*\+.*"
+XPathDocument\s*\(\s*[^"']*\+.*"
+XmlWriter\.WriteStartElement\s*\(\s*"\w+"
+XamlReader\.Load\s*\(\s*[^"']*\+.*"
+Assembly\.LoadFile\s*\(\s*[^"']*\+.*"
+Regex\.Match\s*\(\s*[^"']*\+.*"
+XslTransform\(\).*?Load\s*\(\s*"[^"]*"
+XmlDocument.?DtdProcessing\s=\s*DtdProcessing.(Allow
+HttpPost\s*public\s+void\s+\w+\(
+TripleDES
+MD5
+CipherMode\s*=\s*CipherMode\.ECB
+ServerCertificateValidationCallback\s*=\s*true
+new\s+BinaryFormatter\(\).*?\.Deserialize\s*\([^\)]*
+Switch\.System\.Net\.DontEnableSchUseStrongCrypto\s*=\s*true
+BinaryFormatter\(\).*?\.Deserialize\s*\([^\)]*
+RequestValidationMode\s*=\s*RequestValidationMode\.Disabled
+SecurityProtocol\s*=\s*(SSL3
+HttpContext\.Current\.Request\.Headers\s*=\s*null
+Input decoding functions; check order of operations with validation/sanitization.
+--shell-escape, command allowlists.
+eval, SpEL, Function, setTimeout, setInterval
+String.format, printf, template literals.
+*, +, ?, {n,}, nested quantifiers.
+strcpy, memcpy, pointer arithmetic, unsafe buffer usage.
+Integer assignment, arithmetic, cast operations.
+free, delete, null assignments.
+var, let, const, global document properties.
+callback=, JSONP endpoints.
+Flash, Shockwave, ActiveX, Silverlight, Java applets.
+File input handling; AV scan logs.
+PBKDF2, bcrypt, scrypt, argon2, salt generation.
+SecureRandom, System.Security.Cryptography.RandomNumberGenerator
+nonce, random_bytes, CSPRNG.
+JWT, opaque tokens, CSPRNG usage.
+OAuth2 redirect_uri, allowlist.
+OAuth2 code expiration.
+OAuth2 grant types.
+Refresh token, expiration time.
+OAuth2 scopes.
+response_mode, OAuth2.
+PAR, pushed authorization request.
+tls_client_auth, private_key_jwt.
+OpenID Connect response_mode.
+Crypto, AES, RSA, HMAC.
+OpenSSL, BouncyCastle, libsodium.
+AES, RSA, ECC, key rotation.
+AES-256, RSA-3072, ECC-256.
+Timing attacks, compare functions.
+Exception handling in crypto operations.
+ECB, PKCS#1 v1.5, CBC.
+AES-GCM, ChaCha20-Poly1305.
+AEAD, HMAC, encrypt-then-MAC.
+IV, nonce, random_bytes, CSPRNG.
+encrypt-then-MAC pattern.
+SHA-256, SHA-3, HMAC, MD5 (disallowed).
+Salt, iterations, memory/cpu cost.
+SHA-256, SHA-512, HMAC.
+PBKDF2, argon2, key stretching.
+SecureRandom, System.Security.Cryptography.RandomNumberGenerator
+CSPRNG, entropy source.
+RSA, ECC, Diffie-Hellman; key size checks.
+Diffie-Hellman, ECDH, parameter validation.
+In-memory encryption, secure memory libraries.
+TLS, HTTPS, SSH, secure protocols.
+HTTPS, TLS, mTLS.
+Hardcoded credentials, defaults.
+URL allowlists, firewall rules.
+Key vault, HSM, secrets management.
+IAM policies, ACLs.
+Hardware security module, key vault.
+Rotation schedules, expiration policies.
+Maven, NPM, PyPI, artifact signing.
+#ERROR!
+Object, Set, Map, prototype overrides.
+synchronized, Lock, Semaphore, thread-safe collections.
+File existence + open, access control checks.
+Lock, Monitor, synchronized.
+Thread pool configs, priority handling.
+Log timestamps, user ID, action details.
+UTC, timezone offset.
+Log config paths.
+JSON logs, syslog, common format.
+Masked, hashed values.
+Auth logs, MFA factor logs.
+Authorization failures, masked sensitive data.
+Input validation, business logic violations.
+TLS failures, exception logs.
+Escaped characters, log sanitization.
+File permissions, checksums.
+TLS, SIEM integration.
+Global exception handler.
+IPv4/IPv6 address filtering.
+Certificate key storage, key protection policy.
+DTLS, SRTP, cipher suite allowlist.
